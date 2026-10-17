@@ -1,0 +1,6 @@
+# Local training/inference artifacts; deployment uses the split browser assets in dist/models.
+*.pt
+*.onnx
+runs/
+dist/models/gourd_detector_yolov11.part*.bin
+

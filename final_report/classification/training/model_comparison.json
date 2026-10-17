@@ -1,0 +1,18 @@
+[
+  {
+    "model_name": "mobilenetv3_large_100.ra_in1k",
+    "batch_size": 32,
+    "best_epoch": 30,
+    "best_macro_f1": 0.7182818114026168,
+    "checkpoint": "C:\\Reinforcement\\classification\\runs\\20261009_205019\\mobilenetv3_large_100\\best.pt",
+    "training": "epochs 1-40 full fine-tuning"
+  },
+  {
+    "model_name": "tf_efficientnetv2_b0.in1k",
+    "batch_size": 32,
+    "best_epoch": 18,
+    "best_macro_f1": 0.6517938017598344,
+    "checkpoint": "C:\\Reinforcement\\classification\\runs\\20261009_205019\\tf_efficientnetv2_b0\\best.pt",
+    "training": "5 frozen-backbone epochs plus up to 30 unfrozen fine-tuning epochs"
+  }
+]

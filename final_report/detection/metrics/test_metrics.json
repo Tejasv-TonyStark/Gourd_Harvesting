@@ -1,0 +1,18 @@
+{
+  "metrics/precision(B)": 0.7165296309003314,
+  "metrics/recall(B)": 0.6188585727159157,
+  "metrics/mAP50(B)": 0.6708226759240985,
+  "metrics/mAP50-95(B)": 0.28809312943112714,
+  "fitness": 0.28809312943112714,
+  "model": "YOLO26s",
+  "split": "test",
+  "images": 135,
+  "input_size": 640,
+  "weights_mb": 19.379399299621582,
+  "speed_ms_per_image": {
+    "preprocess": 0.7787874074522363,
+    "inference": 26.708431111075228,
+    "loss": 0.0140985185377455,
+    "postprocess": 2.7913777777737576
+  }
+}

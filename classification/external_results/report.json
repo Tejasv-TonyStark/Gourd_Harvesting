@@ -1,0 +1,233 @@
+[
+  {
+    "file": "ripe_bitter_ushidama.jpg",
+    "query": "mature bitter gourd on vine yellow",
+    "page_url": "https://www.ushidama.com/entry/2023/08/28/112313",
+    "image_url": "https://cdn-ak.f.st-hatena.com/images/fotolife/u/ushidama/20230828/20230828045325.jpg",
+    "search_description": "Ripe yellow bitter melons",
+    "label_status": "search-description only; not expert verified",
+    "predictions": [
+      {
+        "gourd_type": "beans",
+        "maturity": "immature",
+        "mature_probability": 0.06183348596096039,
+        "detection_confidence": 0.20716029405593872,
+        "bbox": [
+          11,
+          0,
+          62,
+          40
+        ]
+      }
+    ],
+    "annotated_image": "C:\\Reinforcement\\classification\\external_results\\annotated_ripe_bitter_ushidama.jpg"
+  },
+  {
+    "file": "green_bitter_scripps.jpg",
+    "query": "immature bitter gourd green on vine",
+    "page_url": "https://www.scrippsfarms.com/bitter-gourd",
+    "image_url": "https://static.wixstatic.com/media/b82d7e_c16c621eec2149b7a600d3b674703782~mv2.jpg/v1/fill/w_520%2Ch_520%2Cal_c%2Clg_1%2Cq_80%2Cenc_avif%2Cquality_auto/b82d7e_c16c621eec2149b7a600d3b674703782~mv2.jpg",
+    "search_description": "Green bitter gourd on the vine",
+    "label_status": "search-description only; not expert verified",
+    "predictions": [
+      {
+        "gourd_type": "bitter_gourd",
+        "maturity": "mature",
+        "mature_probability": 0.9786311388015747,
+        "detection_confidence": 0.24777531623840332,
+        "bbox": [
+          120,
+          27,
+          279,
+          470
+        ]
+      }
+    ],
+    "annotated_image": "C:\\Reinforcement\\classification\\external_results\\annotated_green_bitter_scripps.jpg"
+  },
+  {
+    "file": "ripe_snake_tum.jpg",
+    "query": "snake gourd ripe red orange vine",
+    "page_url": "https://www.ls.tum.de/en/ls/public-relations/news/news-detail/article/snake-tomato-how-can-we-preserve-an-important-source-of-nutrients/",
+    "image_url": "https://www.ls.tum.de/fileadmin/w00bww/ls/bilder/news/240604-schlangenhaargurke-istock.jpg",
+    "search_description": "Red snake gourds on a trellis",
+    "label_status": "search-description only; not expert verified",
+    "predictions": [
+      {
+        "gourd_type": "beans",
+        "maturity": "mature",
+        "mature_probability": 0.9537081718444824,
+        "detection_confidence": 0.2512214183807373,
+        "bbox": [
+          71,
+          130,
+          272,
+          500
+        ]
+      }
+    ],
+    "annotated_image": "C:\\Reinforcement\\classification\\external_results\\annotated_ripe_snake_tum.jpg"
+  },
+  {
+    "file": "orange_snake_etsy.jpg",
+    "query": "snake gourd ripe red orange vine",
+    "page_url": "https://www.etsy.com/listing/1832757673/indian-snake-bean-trichosanthes",
+    "image_url": "https://i.etsystatic.com/22398417/r/il/27cc9d/6509884349/il_fullxfull.6509884349_thxp.jpg",
+    "search_description": "Orange serpent gourd on a trellis",
+    "label_status": "search-description only; not expert verified",
+    "predictions": [
+      {
+        "gourd_type": "bottle_gourd",
+        "maturity": "immature",
+        "mature_probability": 0.14294825494289398,
+        "detection_confidence": 0.5188671946525574,
+        "bbox": [
+          646,
+          509,
+          927,
+          1962
+        ]
+      },
+      {
+        "gourd_type": "beans",
+        "maturity": "mature",
+        "mature_probability": 0.9775643944740295,
+        "detection_confidence": 0.3055964410305023,
+        "bbox": [
+          855,
+          2654,
+          1090,
+          2973
+        ]
+      },
+      {
+        "gourd_type": "beans",
+        "maturity": "mature",
+        "mature_probability": 0.531209409236908,
+        "detection_confidence": 0.22687512636184692,
+        "bbox": [
+          726,
+          2450,
+          822,
+          2729
+        ]
+      }
+    ],
+    "annotated_image": "C:\\Reinforcement\\classification\\external_results\\annotated_orange_snake_etsy.jpg"
+  },
+  {
+    "file": "bottle_wallpaper.jpg",
+    "query": "mature bottle gourd hanging vine photo",
+    "page_url": "https://wallpapers.com/wallpapers/bottle-gourd-hanging-on-tree-8j7ec0aqobsvhsnv.html",
+    "image_url": "https://wallpapers.com/images/hd/bottle-gourd-hanging-on-tree-8j7ec0aqobsvhsnv.jpg",
+    "search_description": "Bottle gourds ready for harvest",
+    "label_status": "search-description only; not expert verified",
+    "predictions": [],
+    "annotated_image": "C:\\Reinforcement\\classification\\external_results\\annotated_bottle_wallpaper.jpg"
+  },
+  {
+    "file": "bottle_green_rainseed.jpg",
+    "query": "young immature bottle gourd hanging vine photo",
+    "page_url": "https://rainseedbd.com/bottle-gourd.html",
+    "image_url": "https://rainseedbd.com/image/dhoboli.jpg",
+    "search_description": "Green bottle gourd on the vine",
+    "label_status": "search-description only; not expert verified",
+    "predictions": [
+      {
+        "gourd_type": "bottle_gourd",
+        "maturity": "mature",
+        "mature_probability": 0.8426043391227722,
+        "detection_confidence": 0.5884308815002441,
+        "bbox": [
+          53,
+          13,
+          396,
+          668
+        ]
+      },
+      {
+        "gourd_type": "bottle_gourd",
+        "maturity": "mature",
+        "mature_probability": 0.8630456924438477,
+        "detection_confidence": 0.3217863440513611,
+        "bbox": [
+          0,
+          0,
+          431,
+          700
+        ]
+      }
+    ],
+    "annotated_image": "C:\\Reinforcement\\classification\\external_results\\annotated_bottle_green_rainseed.jpg"
+  },
+  {
+    "file": "ripe_ivy_healthbenefits.png",
+    "query": "Coccinia grandis ripe red ivy gourd fruits vine photo",
+    "page_url": "https://www.healthbenefitstimes.com/ivy-gourd/",
+    "image_url": "https://www.healthbenefitstimes.com/9/gallery/ivy-gourd/Ripe-Ivy-gourd.png",
+    "search_description": "Ripe red ivy gourds on the vine",
+    "label_status": "search-description only; not expert verified",
+    "predictions": [
+      {
+        "gourd_type": "ivy_gourd",
+        "maturity": "immature",
+        "mature_probability": 0.0737963318824768,
+        "detection_confidence": 0.49106574058532715,
+        "bbox": [
+          138,
+          322,
+          361,
+          602
+        ]
+      },
+      {
+        "gourd_type": "ivy_gourd",
+        "maturity": "immature",
+        "mature_probability": 0.09022317081689835,
+        "detection_confidence": 0.34663262963294983,
+        "bbox": [
+          280,
+          467,
+          470,
+          727
+        ]
+      },
+      {
+        "gourd_type": "beans",
+        "maturity": "immature",
+        "mature_probability": 0.10297930985689163,
+        "detection_confidence": 0.31529635190963745,
+        "bbox": [
+          137,
+          321,
+          382,
+          622
+        ]
+      }
+    ],
+    "annotated_image": "C:\\Reinforcement\\classification\\external_results\\annotated_ripe_ivy_healthbenefits.jpg"
+  },
+  {
+    "file": "green_ivy_wiktrop.jpg",
+    "query": "Coccinia grandis green unripe ivy gourd fruits vine photo",
+    "page_url": "https://portal.wiktrop.org/species/show/68",
+    "image_url": "https://portal.wiktrop.org/files-api/api/get/raw/img/Coccinia%20grandis/cocgr_20080609_1012069_09.jpg",
+    "search_description": "Young green ivy gourds on a vine",
+    "label_status": "search-description only; not expert verified",
+    "predictions": [
+      {
+        "gourd_type": "bottle_gourd",
+        "maturity": "immature",
+        "mature_probability": 0.43254271149635315,
+        "detection_confidence": 0.34830886125564575,
+        "bbox": [
+          539,
+          44,
+          694,
+          338
+        ]
+      }
+    ],
+    "annotated_image": "C:\\Reinforcement\\classification\\external_results\\annotated_green_ivy_wiktrop.jpg"
+  }
+]

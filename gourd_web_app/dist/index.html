@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173e2a">
+  <meta name="description" content="A student-built research prototype that detects gourd varieties and estimates maturity for farmers.">
+  <title>GourdVision | Farmer Research Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261016-1">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="GourdVision home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 42 42"><path d="M25.8 5.1c-1.8 3.7-1.3 6.1.5 8.2M21.6 12.8C10 12.8 6.2 23.1 10.9 31.4c4.2 7.4 16.9 8.6 22.1.9 5.8-8.5.1-19.5-11.4-19.5Z"/><path d="M25.2 6.3c3.2-.8 5.6.1 7.4 2.8-3.4 1-5.8.1-7.4-2.8Z"/></svg>
+      </span>
+      <span>GourdVision</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#scanner">Try scanner</a>
+      <a href="#how">How it works</a>
+      <a href="#story">Our story</a>
+    </nav>
+    <a class="header-cta" href="#scanner">Analyse a photo</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> A son's idea for his father's field</p>
+        <h1>Inspired by a father.<br><em>Built for farmers.</em></h1>
+        <p class="hero-lede">A student watched his father struggle to judge gourds consistently and asked whether technology could offer a useful second opinion. That question became this two-stage computer vision research project.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#scanner">Scan a gourd <span>→</span></a>
+          <a class="button button-quiet" href="#how">See how it works</a>
+        </div>
+        <div class="hero-note">
+          <span class="pulse-dot"></span>
+          <p><strong>Runs privately in your browser.</strong> Your photograph is processed on your device and is not uploaded to our server.</p>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-label="Illustration of gourds being analysed">
+        <div class="sun-orbit"></div>
+        <div class="leaf leaf-one"></div>
+        <div class="leaf leaf-two"></div>
+        <svg class="gourd-art" viewBox="0 0 560 560" role="img" aria-label="Bottle gourd illustration with detection frame">
+          <defs>
+            <linearGradient id="gourdFill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9df77"/><stop offset=".55" stop-color="#84aa52"/><stop offset="1" stop-color="#577d3e"/></linearGradient>
+            <linearGradient id="gourdGlow" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#f2f6be" stop-opacity=".8"/><stop offset="1" stop-color="#f2f6be" stop-opacity="0"/></linearGradient>
+            <filter id="shadow"><feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#173e2a" flood-opacity=".22"/></filter>
+          </defs>
+          <ellipse cx="284" cy="485" rx="132" ry="24" fill="#173e2a" opacity=".12"/>
+          <g filter="url(#shadow)" transform="rotate(-7 280 290)">
+            <path d="M296 116c-8-38 4-67 36-87" fill="none" stroke="#496d35" stroke-width="18" stroke-linecap="round"/>
+            <path d="M292 132c-51 8-77 48-65 102 8 35-9 66-31 104-40 69-7 137 76 146 92 10 137-57 101-137-21-46-43-75-30-117 15-50-4-91-51-98Z" fill="url(#gourdFill)"/>
+            <path d="M270 154c-31 28-24 77-12 99 16 30-9 94-22 120-18 37-4 72 23 83-9-48 19-99 32-135 21-59 10-116-21-167Z" fill="url(#gourdGlow)" opacity=".8"/>
+            <path d="M317 40c28-8 54 2 72 30-30 9-56-1-72-30Z" fill="#5d8b43"/>
+          </g>
+          <g class="scan-frame" fill="none" stroke="#f3ba43" stroke-width="4" stroke-linecap="round">
+            <path d="M150 141v-32h42M409 141v-32h-42M150 410v32h42M409 410v32h-42"/>
+          </g>
+          <g class="scan-label"><rect x="151" y="91" width="182" height="42" rx="8" fill="#173e2a"/><circle cx="174" cy="112" r="5" fill="#f3ba43"/><text x="189" y="118" fill="#fff" font-size="17" font-family="DM Sans">bottle gourd · 80%</text></g>
+        </svg>
+        <div class="floating-card maturity-card"><span class="mini-icon">◒</span><div><small>Maturity</small><strong>Likely mature</strong></div></div>
+        <div class="floating-card privacy-card"><span class="mini-icon">✓</span><div><small>Privacy</small><strong>On-device analysis</strong></div></div>
+      </div>
+    </section>
+
+    <aside class="research-caution" aria-label="Research use caution">
+      <span class="caution-icon">!</span>
+      <div><strong>Research prototype for farmer support</strong><p>Results can be wrong because of lighting, angle, occlusion, or unfamiliar varieties. Do not use this tool alone for harvesting, pricing, pesticide, food-safety, or financial decisions. Confirm with local agricultural expertise.</p></div>
+    </aside>
+
+    <section class="scanner-section" id="scanner">
+      <div class="section-heading reveal">
+        <p class="eyebrow"><span></span> Try the research model</p>
+        <h2>Bring the field into focus.</h2>
+        <p>Use one clear photo. Keep the gourd well-lit and fully visible for the most useful result.</p>
+      </div>
+
+      <div class="scanner-card reveal">
+        <div class="scanner-tabs" role="tablist" aria-label="Image source">
+          <button class="tab active" id="uploadTab" role="tab" aria-selected="true" aria-controls="uploadPanel"><span>↥</span> Upload photo</button>
+          <button class="tab" id="cameraTab" role="tab" aria-selected="false" aria-controls="cameraPanel"><span>◎</span> Use camera</button>
+        </div>
+
+        <div class="scanner-body">
+          <div id="uploadPanel" class="source-panel active" role="tabpanel" aria-labelledby="uploadTab">
+            <label class="drop-zone" id="dropZone" for="fileInput">
+              <input id="fileInput" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+              <span class="upload-orb">↥</span>
+              <strong>Drop a field photo here</strong>
+              <span>or tap to choose JPG, PNG, or WebP</span>
+              <small>For best results: one or more visible gourds, natural light, minimal blur</small>
+            </label>
+          </div>
+
+          <div id="cameraPanel" class="source-panel" role="tabpanel" aria-labelledby="cameraTab" hidden>
+            <div class="camera-stage">
+              <video id="cameraVideo" playsinline autoplay muted></video>
+              <div class="camera-guide"><span></span></div>
+              <div class="camera-empty" id="cameraEmpty"><span>◎</span><p>Allow camera access to take a field photo.</p><button class="button button-primary" id="startCamera" type="button">Start camera</button></div>
+            </div>
+            <button class="capture-button" id="captureButton" type="button" disabled aria-label="Capture photo"><span></span></button>
+          </div>
+
+          <div id="previewPanel" class="preview-panel" hidden>
+            <div class="canvas-wrap">
+              <canvas id="resultCanvas"></canvas>
+              <span class="image-badge" id="imageBadge">Ready to analyse</span>
+            </div>
+            <div class="preview-actions">
+              <button class="button button-quiet" id="chooseAnother" type="button">Choose another</button>
+              <button class="button button-primary" id="analyseButton" type="button">Analyse photo <span>→</span></button>
+            </div>
+          </div>
+
+          <div id="loadingPanel" class="loading-panel" hidden aria-live="polite">
+            <div class="loading-visual"><div class="loading-gourd"></div><div class="scan-line"></div></div>
+            <h3 id="loadingTitle">Preparing the research models…</h3>
+            <p id="loadingText">The first visit downloads the models. Later scans are faster.</p>
+            <div class="progress-track"><span id="progressBar"></span></div>
+            <small id="progressLabel">Starting</small>
+          </div>
+        </div>
+
+        <div id="resultsPanel" class="results-panel" hidden aria-live="polite">
+          <div class="result-header"><div><p class="eyebrow"><span></span> Analysis complete</p><h3 id="resultHeadline">Gourd analysis</h3></div><button class="button button-quiet" id="scanAgain" type="button">Scan another</button></div>
+          <div id="resultList" class="result-list"></div>
+          <div class="result-caution"><span>!</span><p><strong>Treat this as a second opinion.</strong> A model confidence score measures certainty in its prediction; it does not guarantee that the prediction is correct.</p></div>
+        </div>
+      </div>
+      <canvas id="sourceCanvas" hidden></canvas>
+    </section>
+
+    <section class="how-section section-shell" id="how">
+      <div class="section-heading left reveal"><p class="eyebrow"><span></span> Two-stage architecture</p><h2>One photo. Two focused models.</h2><p>Each stage solves a different part of the problem, making the output easier to understand.</p></div>
+      <div class="process-grid">
+        <article class="process-card reveal"><span class="step-number">01</span><div class="process-icon detection-icon"><span></span></div><h3>Find and identify</h3><p>YOLO11n places a box around detected produce and estimates its variety.</p><div class="metric"><strong>81.0%</strong><span>mAP@0.5 on a held-out detection test</span></div></article>
+        <div class="process-arrow" aria-hidden="true">→</div>
+        <article class="process-card reveal"><span class="step-number">02</span><div class="process-icon classify-icon">◐</div><h3>Estimate maturity</h3><p>MobileNetV3Large examines each detected crop and estimates mature or immature.</p><div class="metric"><strong>84.63%</strong><span>held-out test accuracy</span></div></article>
+        <div class="process-arrow" aria-hidden="true">→</div>
+        <article class="process-card reveal"><span class="step-number">03</span><div class="process-icon result-icon">✓</div><h3>Explain the result</h3><p>The result combines variety, maturity, confidence, and a visible location box.</p><div class="metric"><strong>4</strong><span>gourd varieties in this trial</span></div></article>
+      </div>
+      <div class="evaluation-note reveal" aria-label="Model evaluation details">
+        <strong>How the models performed in testing</strong>
+        <p><b>YOLO11n detection:</b> 81.8% precision, 68.3% recall, and 81.0% mAP@0.5 on 108 held-out images with 518 labeled gourds. <b>MobileNetV3Large maturity:</b> 84.63% accuracy and 77.89% balanced accuracy on 462 held-out crop images.</p>
+        <p>These are separate tests of the detector and classifier. They do not measure the accuracy of the complete two-stage scan. A scan's confidence scores are estimates for that photo, not measured accuracy.</p>
+      </div>
+      <div class="varieties reveal"><span>Currently shown for</span><div><b>Bitter gourd</b><b>Bottle gourd</b><b>Ivy gourd</b><b>Snake gourd</b></div></div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-art reveal">
+        <div class="story-sun"></div>
+        <svg viewBox="0 0 600 480" role="img" aria-label="A farmer and student standing together in a field">
+          <path d="M0 353c93-58 170-55 260-6 109 59 198 39 340-21v154H0Z" fill="#5f8745"/><path d="M0 391c126-45 231-26 323 24 95 51 183 28 277-10v75H0Z" fill="#3c683f"/>
+          <g fill="none" stroke="#244e34" stroke-width="8" stroke-linecap="round"><path d="M72 423c10-54 34-89 72-105M104 424c8-46 1-77-20-101M462 427c3-60 23-98 60-125M501 428c5-39-5-70-31-94"/></g>
+          <g transform="translate(210 128)"><circle cx="57" cy="49" r="31" fill="#8f552f"/><path d="M29 43c5-35 53-45 65-5-23-7-45-7-65 5Z" fill="#eee1c8"/><path d="M35 86c19-16 44-16 64 1l12 117H20Z" fill="#e5b850"/><path d="M42 203 30 302M88 203l15 99M28 112-4 190M98 111l30 77" stroke="#8f552f" stroke-width="16" fill="none" stroke-linecap="round"/></g>
+          <g transform="translate(337 156)"><circle cx="51" cy="42" r="27" fill="#a6653c"/><path d="M26 36c8-31 47-37 57-2-20-6-39-5-57 2Z" fill="#202d28"/><path d="M27 78c18-13 39-13 56 0l12 97H17Z" fill="#d7e5d2"/><path d="M34 174 24 270M76 174l11 96M24 99-7 163M84 99l29 56" stroke="#a6653c" stroke-width="14" fill="none" stroke-linecap="round"/><rect x="103" y="139" width="39" height="65" rx="6" fill="#172d24" transform="rotate(11 103 139)"/></g>
+        </svg>
+      </div>
+      <div class="story-copy reveal"><p class="eyebrow light"><span></span> Why this began</p><blockquote>“The idea began with a son watching his father work.”</blockquote><p>A student saw his father struggle to judge different gourds consistently in the field. The work depended on experience, close inspection, and long hours—knowledge that was valuable but difficult to scale.</p><p>That observation became a research question: could a camera and a carefully trained model provide farmers with a quick, understandable second opinion?</p><p class="story-signoff">Built from respect for farmers, and curiosity about how technology can serve their everyday work.</p></div>
+    </section>
+
+    <section class="responsibility section-shell reveal">
+      <div><p class="eyebrow"><span></span> Responsible use</p><h2>Useful guidance starts with honest limits.</h2></div>
+      <div class="responsibility-list">
+        <article><span>01</span><div><h3>Research, not agricultural advice</h3><p>The tool is an experimental aid and has not been certified for commercial decisions.</p></div></article>
+        <article><span>02</span><div><h3>Check the whole plant</h3><p>Colour alone may not indicate maturity. Variety, firmness, size, season, and local knowledge still matter.</p></div></article>
+        <article><span>03</span><div><h3>Know the data boundary</h3><p>The model performs best on scenes similar to its training data and may struggle in new farms or lighting.</p></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">◒</span><span>GourdVision</span></a><p>Student research prototype · Built for learning and farmer support</p><a href="#scanner">Try the scanner ↑</a></footer>
+
+  <noscript><div class="noscript">JavaScript is required for camera access and on-device model inference.</div></noscript>
+  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.30.0/dist/ort.webgpu.min.js"></script>
+  <script src="app.js?v=20261010-1"></script>
+</body>
+</html>

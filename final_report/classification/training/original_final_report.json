@@ -1,0 +1,67 @@
+{
+  "winner": {
+    "model_name": "mobilenetv3_large_100.ra_in1k",
+    "batch_size": 32,
+    "best_epoch": 30,
+    "best_macro_f1": 0.7182818114026168,
+    "checkpoint": "C:\\Reinforcement\\classification\\runs\\20261009_205019\\mobilenetv3_large_100\\best.pt",
+    "training": "epochs 1-40 full fine-tuning"
+  },
+  "candidates": [
+    {
+      "model_name": "mobilenetv3_large_100.ra_in1k",
+      "batch_size": 32,
+      "best_epoch": 30,
+      "best_macro_f1": 0.7182818114026168,
+      "checkpoint": "C:\\Reinforcement\\classification\\runs\\20261009_205019\\mobilenetv3_large_100\\best.pt",
+      "training": "epochs 1-40 full fine-tuning"
+    },
+    {
+      "model_name": "tf_efficientnetv2_b0.in1k",
+      "batch_size": 32,
+      "best_epoch": 18,
+      "best_macro_f1": 0.6517938017598344,
+      "checkpoint": "C:\\Reinforcement\\classification\\runs\\20261009_205019\\tf_efficientnetv2_b0\\best.pt",
+      "training": "5 frozen-backbone epochs plus up to 30 unfrozen fine-tuning epochs"
+    }
+  ],
+  "threshold_tuned_on_validation": 0.4599999999999999,
+  "test_metrics": {
+    "threshold": 0.4599999999999999,
+    "accuracy": 0.8463203463203464,
+    "balanced_accuracy": 0.7788950276243094,
+    "macro_f1": 0.7758859821129658,
+    "roc_auc": 0.8588397790055249,
+    "confusion_matrix": [
+      [
+        66,
+        34
+      ],
+      [
+        37,
+        325
+      ]
+    ],
+    "per_class": {
+      "immature": {
+        "precision": 0.6407766990291263,
+        "recall": 0.66,
+        "f1": 0.6502463054187192,
+        "support": 100
+      },
+      "mature": {
+        "precision": 0.9052924791086351,
+        "recall": 0.8977900552486188,
+        "f1": 0.9015256588072122,
+        "support": 362
+      }
+    }
+  },
+  "final_checkpoint": "C:\\Reinforcement\\classification\\models\\gourd_maturity_classifier_best.pt",
+  "dataset_counts": {
+    "train": 4897,
+    "valid": 545,
+    "test": 462
+  },
+  "selection_note": "Selected on validation macro-F1; test evaluated once for winner."
+}

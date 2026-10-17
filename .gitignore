@@ -1,0 +1,23 @@
+# Private gourd data and local environments
+**/dataset/
+**/dataset_*/
+**/*_dataset/
+**/train/
+**/test/
+**/valid/
+**/runs/
+.venv*/
+Gourd_Dataset*/
+Immature Gourd/
+Mature Gourd/
+gourd_classification/
+classification_new_folders_test/
+
+# Generated samples and local state
+**/__pycache__/
+**/.git/
+**/.edge-render/
+**/qa_render/
+*.pid
+*.log
+*.pyc

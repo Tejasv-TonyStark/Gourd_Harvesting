@@ -1,0 +1,142 @@
+{
+  "selected_pipeline": "YOLO26s detection -> MobileNetV3Large maturity classification",
+  "detection_test": {
+    "metrics/precision(B)": 0.7165296309003314,
+    "metrics/recall(B)": 0.6188585727159157,
+    "metrics/mAP50(B)": 0.6708226759240985,
+    "metrics/mAP50-95(B)": 0.28809312943112714,
+    "fitness": 0.28809312943112714,
+    "model": "YOLO26s",
+    "split": "test",
+    "images": 135,
+    "input_size": 640,
+    "weights_mb": 19.379399299621582,
+    "speed_ms_per_image": {
+      "preprocess": 0.7787874074522363,
+      "inference": 26.708431111075228,
+      "loss": 0.0140985185377455,
+      "postprocess": 2.7913777777737576
+    }
+  },
+  "detection_test_per_class": [
+    {
+      "Class": "beans",
+      "Images": "27",
+      "Instances": "227",
+      "Box-P": 0.44098,
+      "Box-R": 0.35683,
+      "Box-F1": 0.39447,
+      "mAP50": 0.33445,
+      "mAP75": 0.04216,
+      "mAP50-95": 0.10598
+    },
+    {
+      "Class": "bitter_gourd",
+      "Images": "42",
+      "Instances": "154",
+      "Box-P": 0.74645,
+      "Box-R": 0.81818,
+      "Box-F1": 0.78067,
+      "mAP50": 0.86719,
+      "mAP75": 0.32656,
+      "mAP50-95": 0.41899
+    },
+    {
+      "Class": "bottle_gourd",
+      "Images": "38",
+      "Instances": "125",
+      "Box-P": 0.80667,
+      "Box-R": 0.72,
+      "Box-F1": 0.76087,
+      "mAP50": 0.80172,
+      "mAP75": 0.16174,
+      "mAP50-95": 0.3463
+    },
+    {
+      "Class": "ivy_gourd",
+      "Images": "16",
+      "Instances": "185",
+      "Box-P": 0.70333,
+      "Box-R": 0.62794,
+      "Box-F1": 0.6635,
+      "mAP50": 0.69601,
+      "mAP75": 0.11191,
+      "mAP50-95": 0.25566
+    },
+    {
+      "Class": "snake_gourd",
+      "Images": "13",
+      "Instances": "54",
+      "Box-P": 0.88522,
+      "Box-R": 0.57134,
+      "Box-F1": 0.69446,
+      "mAP50": 0.65473,
+      "mAP75": 0.28041,
+      "mAP50-95": 0.31353
+    }
+  ],
+  "classification_test": {
+    "threshold": 0.4599999999999999,
+    "accuracy": 0.8463203463203464,
+    "balanced_accuracy": 0.7788950276243094,
+    "macro_f1": 0.7758859821129658,
+    "roc_auc": 0.8588397790055249,
+    "confusion_matrix": [
+      [
+        66,
+        34
+      ],
+      [
+        37,
+        325
+      ]
+    ],
+    "per_class": {
+      "immature": {
+        "precision": 0.6407766990291263,
+        "recall": 0.66,
+        "f1": 0.6502463054187192,
+        "support": 100
+      },
+      "mature": {
+        "precision": 0.9052924791086351,
+        "recall": 0.8977900552486188,
+        "f1": 0.9015256588072122,
+        "support": 362
+      }
+    },
+    "model": "MobileNetV3Large",
+    "split": "test",
+    "images": 462,
+    "weights_mb": 16.24282932281494,
+    "source": "test_metrics embedded in selected training checkpoint"
+  },
+  "classification_report": {
+    "immature": {
+      "precision": 0.6407766990291263,
+      "recall": 0.66,
+      "f1-score": 0.6502463054187192,
+      "support": 100
+    },
+    "mature": {
+      "precision": 0.9052924791086351,
+      "recall": 0.8977900552486188,
+      "f1-score": 0.9015256588072122,
+      "support": 362
+    },
+    "accuracy": 0.8463203463203464,
+    "macro avg": {
+      "precision": 0.7730345890688807,
+      "recall": 0.7788950276243094,
+      "f1-score": 0.7758859821129658,
+      "support": 462
+    },
+    "weighted avg": {
+      "precision": 0.8480379812559276,
+      "recall": 0.8463203463203464,
+      "f1-score": 0.8471361883768024,
+      "support": 462
+    }
+  },
+  "important_note": "Detection and classification metrics are separate; no combined end-to-end accuracy is claimed. Classification uses the original test result embedded in the selected checkpoint."
+}
